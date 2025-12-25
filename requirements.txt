@@ -1,0 +1,13 @@
+# Temporal Funhouse - Requirements
+# Minimal dependencies for running the extreme protocols
+
+# Core dependencies
+numpy>=1.20.0
+
+# Optional: For LLM integration (uncomment to use)
+# openai>=1.0.0              # For OpenAI API (GPT-4, GPT-3.5, etc.)
+# anthropic>=0.7.0           # For Anthropic API (Claude)
+# google-generativeai>=0.3.0 # For Google Gemini API
+
+# Example installation:
+# pip install openai anthropic google-generativeai
