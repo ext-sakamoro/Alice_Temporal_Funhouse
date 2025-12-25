@@ -102,12 +102,15 @@ gemini = GeminiPlayer(color='B', api_key='your-key')
 results = run_retro_demo(gemini, gemini)
 ```
 
-**Quick Example**:
+**Quick Example (works locally without API keys)**:
 ```bash
-# Install LLM libraries
-pip install google-generativeai openai anthropic
+# Run with local Simple AI (no installation required)
+python examples/test_gemini_vs_gpt4.py
 
-# Run example
+# Or with LLM APIs (optional)
+pip install google-generativeai openai
+export GEMINI_API_KEY="your-key"
+export OPENAI_API_KEY="your-key"
 python examples/test_gemini_vs_gpt4.py
 ```
 

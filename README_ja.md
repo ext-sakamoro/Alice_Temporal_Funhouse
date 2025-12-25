@@ -102,12 +102,15 @@ gemini = GeminiPlayer(color='B', api_key='your-key')
 results = run_retro_demo(gemini, gemini)
 ```
 
-**クイック例**:
+**クイック例（APIキーなしでローカル実行可能）**:
 ```bash
-# LLMライブラリをインストール
-pip install google-generativeai openai anthropic
+# ローカルSimple AIで実行（インストール不要）
+python examples/test_gemini_vs_gpt4.py
 
-# サンプルを実行
+# LLM APIを使う場合（オプション）
+pip install google-generativeai openai
+export GEMINI_API_KEY="your-key"
+export OPENAI_API_KEY="your-key"
 python examples/test_gemini_vs_gpt4.py
 ```
 
